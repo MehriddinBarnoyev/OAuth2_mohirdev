@@ -1,0 +1,31 @@
+server:
+  port: 8080
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 448813398322-h3j8efsj5poumde5ikgvoiuukpdv4u4k.apps.googleusercontent.com
+            client-secret: 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
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oauth_db
+    username: postgres
+    password: 5633
+    hikari:
+      password: 5633
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL92Dialect
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: barnoyevmehriddin77@gmail.com
+    password: izqgxholvmzoqwxm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
